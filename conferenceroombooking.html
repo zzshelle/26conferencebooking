@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>會議室登記 Conference Room Booking</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 48px;
+    background: #f4f6f8;
+    font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", Arial, sans-serif;
+    color: #1f2937;
+    line-height: 1.7;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+    margin: 0 0 4px;
+    color: #0f3d68;
+  }
+  .header p {
+    margin: 0;
+    color: #4b5563;
+    font-size: 0.95rem;
+  }
+  .notice {
+    background: #fff7e6;
+    border: 1px solid #f0c36d;
+    border-left: 6px solid #d97706;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+  }
+  .notice h2 {
+    margin: 0 0 10px;
+    font-size: 1.05rem;
+    color: #92400e;
+  }
+  .notice ol {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+  .notice li {
+    margin-bottom: 10px;
+  }
+  .notice li:last-child {
+    margin-bottom: 0;
+  }
+  .notice .zh {
+    display: block;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  .notice .en {
+    display: block;
+    font-size: 0.9rem;
+    color: #6b5423;
+    margin-top: 2px;
+  }
+  .rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 600px) {
+    .rooms { grid-template-columns: 1fr; }
+  }
+  .card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .card h3 {
+    margin: 0 0 4px;
+    font-size: 1.1rem;
+    color: #0f3d68;
+  }
+  .card p.sub {
+    margin: 0 0 16px;
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  .btn {
+    display: inline-block;
+    background: #0f3d68;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .btn:hover {
+    background: #0b2d4d;
+  }
+  .footer-note {
+    background: #eef2f7;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 0.9rem;
+    color: #374151;
+  }
+  .footer-note .zh {
+    display: block;
+  }
+  .footer-note .en {
+    display: block;
+    color: #6b7280;
+    margin-top: 2px;
+  }
+  hr.sep {
+    border: none;
+    border-top: 1px dashed #d1d5db;
+    margin: 14px 0;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <h1>臺北市立中正高中會議室登記</h1>
+    <p>Zhongzheng Senior High School — Conference Room Booking Portal</p>
+  </div>
+
+  <div class="rooms">
+    <div class="card">
+      <h3>第一會議室</h3>
+      <p class="sub">1st Conference Room</p>
+      <a class="btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2KALA0BzD8Yuuapb-GEMxdFXUYdjtL7H2OSTvoPqTO_CcnQKzNnRCLF_bL5MVR2bek57uLnSsn" target="_blank" rel="noopener">
+        前往預約 / Book Now
+      </a>
+    </div>
+    <div class="card">
+      <h3>第二會議室</h3>
+      <p class="sub">2nd Conference Room</p>
+      <a class="btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0QIv1dRThgkQSyv786qBB4jiF2XxcpyMhhuiEyFM0Z7tL19oVBNIK--N2vRLYYGpenJX3JgXsM" target="_blank" rel="noopener">
+        前往預約 / Book Now
+      </a>
+    </div>
+  </div>
+
+  <div class="notice">
+    <h2>⚠ 預約須知 / Booking Policy</h2>
+    <ol>
+      <li>
+        <span class="zh">本頁面所顯示之時段僅供參考，是否可用尚待確認；會議之最終確認須經校長室秘書核可。</span>
+        <span class="en">Time slots shown on this page indicate potential availability only. Final confirmation of any meeting is subject to approval by the secretary to the Principal.</span>
+      </li>
+      <li>
+        <span class="zh">若發生時段衝突或因其他原因，校長室秘書得取消已登記之預約。</span>
+        <span class="en">The secretary to the Principal may cancel a booking should a scheduling conflict arise, or for other reasons.</span>
+      </li>
+      <li>
+        <span class="zh">如您收到取消通知信，但尚未收到校長室秘書進一步說明，請主動聯繫詢問取消原因，並確認是否需要改期。</span>
+        <span class="en">If you receive a cancellation email and have not yet heard from the secretary regarding the reason, please reach out to inquire about the cause and determine whether a reschedule is necessary.</span>
+      </li>
+    </ol>
+  </div>
+
+  <div class="footer-note">
+    <span class="zh">如有任何問題，請洽校長室秘書 溫秘書，分機 #101。</span>
+    <span class="en">For any questions, please contact the secretary to the Principal, Ms. Wen, at extension #101.</span>
+  </div>
+
+</div>
+</body>
+</html>
